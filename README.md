@@ -152,7 +152,7 @@ Other projects using **ggwave** or one of its prototypes:
 # build
 git clone https://github.com/ggerganov/ggwave --recursive
 cd ggwave && mkdir build && cd build
-cmake ..
+cmake .. -DCMAKE_BUILD_TYPE=Release -DGGWAVE_SUPPORT_SDL2=ON -DSDL2_DIR=C:/SDL2
 make
 
 # running
